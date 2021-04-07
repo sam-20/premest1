@@ -1,5 +1,31 @@
-
 git init    /*use this command to initialize ur project with git for the first time*/
+
 git status /*use this command to know the status of ur files. Files listed in red are untracked by git and need to be added*/
+
 git add . /**use this command to add all the untracked files (files listed in red) to the staging area */
-or git add filename /*use this command to add a specific untracked file to the staging area*/
+or 
+git add filename /*use this command to add a specific untracked file to the staging area*/
+
+git status /*if files are listed in green then they are in the staging area and are ready to be pushed to our repository*/
+
+git commit -m "message"  /*use this command to provide a short comment or description to ur files in the staging area before they are pushed to the repository*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git config --global user.email "you@example.com"
+git config --global user.name "your name"
+
+
