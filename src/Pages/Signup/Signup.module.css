@@ -1,0 +1,53 @@
+.mainsign{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    display: flex;
+    background-image: url(../../images/Traffic-jams.png);
+    background-size: 100% 100%;
+}
+.top{
+    flex-direction: row;
+    flex: 0.4;
+    height: 450px;
+    width: 350px;
+    background-color: rgb(91, 238, 17);
+    margin-top: 90px;
+    margin-left: 90px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px -5px 10px  greenyellow
+}
+ .signn{
+     color: peachpuff;
+     margin-left: 20px;
+     margin-top: 30px
+ }
+ .branding{
+     margin-top: 250px;
+     margin-left: 200px;
+     color: rgb(91, 238, 17);
+     font-size: 100px;
+     font-style: oblique;
+
+ }
+ 
+.inpute{
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px;
+    margin: 20px;
+    background-color: transparent;
+    width: 300px;
+}
+
+.linktoLog{
+    margin-left: 80px;
+    margin-top: 25px;
+    
+}
+

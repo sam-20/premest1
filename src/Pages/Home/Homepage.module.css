@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    background-size: 100% 100%;
+}
+.imge{
+    max-height: 100px;
+    max-width: 100px;
+}
+.up{
+   background-color: rgb(7, 102, 102);
+    background-size: 100% 100%;
+    /* background-image: url(https://ak.picdn.net/shutterstock/videos/27076756/preview/stock-footage-aerial-top-down-view-of-traffic-jam-on-a-car-bridge-and-moving-train-k-video.webm); */
+    background-image: url(https://s1.cdn.autoevolution.com/images/news/gallery/2021-honda-jazz-type-r-rendered-rumored-with-four-cylinder-turbo-engine_3.jpg)
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    background:hsla(160, 88%, 75%, 0.5);
+
+    align-items: center;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.middlediv{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly
+    
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 5px;
+}
+.btn{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    font-weight: bolder;
+    color: #2596be;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    padding-right: 40px;
+
+}
+.mge{
+    max-width: 100px;
+    max-height: 50px
+}
+.tp{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}

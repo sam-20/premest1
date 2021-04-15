@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%
+}
+.mainLoge{
+    margin: 0%;
+    height: 100vh;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    background-image: url(../../images/cars.jpg);
+    background-size: 100% 100%;
+    justify-content: space-evenly
+}
+.Log{
+    height: 420px;
+    width: 350px;
+    background-color: hsla(120, 83%, 65%, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+.input{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+::placeholder{
+    background-color: transparent;
+    
+}
+.inpute{
+    width: 300px;
+    height: 35px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    /* background-color: transparent; */
+}
+.topdiv{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+.link{
+    align-self: center;
+    justify-self: center;
+    margin-top: 15px
+}
+.Pimg{
+    max-width: 100px;
+    max-height: 100px;
+    align-self: center;
+    border-radius: 350px;
+} 
+.btn{
+    align-self: center;
+    justify-self: center;
+    margin-left:20px
+}
+.branding{
+    align-self: center;
+     /* margin-left: 300px; */
+     color: rgb(91, 238, 17);
+     font-size: 100px;
+     font-style: oblique;
+}
