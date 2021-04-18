@@ -11,16 +11,17 @@
     flex: 0.4;
     height: 450px;
     width: 350px;
-    background-color: rgb(91, 238, 17);
+    background-color: wheat;
+    /* background-color: rgb(91, 238, 17); */
     margin-top: 90px;
     margin-left: 90px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: -5px -5px 10px  greenyellow
+    box-shadow: 5px -5px 10px  
 }
  .signn{
-     color: peachpuff;
+     color: rgb(91, 238, 17);
      margin-left: 20px;
      margin-top: 30px
  }

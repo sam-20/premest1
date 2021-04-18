@@ -8,19 +8,23 @@
     padding: 0%;
     display: flex;
     align-items: center;
-    background-image: url(../../images/cars.jpg);
+    /* background-image: url(../../images/ggG5mvj.jpg); */
+    background-color: white;
     background-size: 100% 100%;
-    justify-content: space-evenly
+    justify-content: center
+}
+.in{
+    color: black
 }
 .Log{
     height: 420px;
     width: 350px;
-    background-color: hsla(120, 83%, 65%, 0.5);
+    /* background-color: hsla(191, 27%, 92%, 0.5); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     justify-content: space-evenly;
 }
 .input{
@@ -30,17 +34,20 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-::placeholder{
-    background-color: transparent;
-    
+.foot{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
 .inpute{
     width: 300px;
     height: 35px;
     margin-bottom: 10px;
     border: none;
     outline: none;
-    /* background-color: transparent; */
+    /* background-color: transparent;  */
 }
 .topdiv{
     margin-bottom: 10px;
@@ -64,9 +71,37 @@
     margin-left:20px
 }
 .branding{
-    align-self: center;
-     /* margin-left: 300px; */
-     color: rgb(91, 238, 17);
-     font-size: 100px;
-     font-style: oblique;
+    height: 420px;
+    width: 350px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px; */
+    justify-content: space-evenly;
+}
+.imge{
+  /* max-width: 250px; */
+  max-height: 250px;
+}
+
+.Loge{
+    background-color: wheat;
+    background-size: 100% 100%;
+    /* background-color: hsla(300, 3%, 53%, 0.5); */
+    height: 500px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+}
+.hi{
+    /* margin-top: 250px;
+    margin-left: 200px; */
+    color:white ;
+    font-size: 50px;
+    font-style: oblique;
 }

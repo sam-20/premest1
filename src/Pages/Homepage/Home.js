@@ -11,6 +11,7 @@ import './Home.css'
                     <div className='fHead'>
                         <h1 className="brandname">Rushour</h1>
                         <div className="LS">
+                        <button onClick={()=>history.push('./login')}>hii</button>
                         <Button onClick = {()=>history.push('/login')} Color="peach" width="80px" marginleft ="0px"  text="login"/>
                         <Button onClick = {()=>history.push('/Signup')} Color="peach" width="80px" marginleft ="0px"  text="Signup"/>
                         </div>

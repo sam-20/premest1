@@ -1,12 +1,14 @@
+import ButtonCss from './Button.module.css'
 
 function Button (props,onChange,className,onClick){
+
     return(
         <button style={{
             backgroundColor:props.color,
             color:'peach',
             width:props.width,
-            height:'40px',
-            borderRadius:props.border,
+            height:props.height,
+            borderRadius:props.borderr,
             boxShadow:props.BS,
             borderStyle:'dotted',
             border:props.border,

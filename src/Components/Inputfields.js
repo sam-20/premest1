@@ -1,7 +1,7 @@
 function Inputfield({label,type,placeholder,name,className,onChange,value}){
     return(
         <div >
-                <label>{label}</label>
+                <label style={{fontSize:"15px",fontWeight:"50px"}}>{label}</label> <br/>
                 <input 
                  type={type} 
                 placeholder={placeholder} 

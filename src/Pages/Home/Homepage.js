@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import Homecss from './Homepage.module.css'
 import Button from '../../Components/Button';
 import car from '../../images/carr.jpg'
@@ -7,6 +7,7 @@ import logo from '../../images/Plogo.png'
 import sug from '../../images/suge.png'
 import drive from '../../images/sharee.png'
 function Homepage() {
+    let history = useHistory();
     return (
         <div className={Homecss.main}>
             <div className={Homecss.up}>
@@ -24,14 +25,15 @@ function Homepage() {
                         </ul>
                     </div>
                     <div className={Homecss.btn}>
-                        <Button width="150px" text="Login" marginL="10px" color="transparent" border="none"/>
-                        <Button width="150px" text="Signup"marginL="20px" color="164, 67, 45"/>  
+                        
+                        <Button width="150px" text="Login" marginL="10px" color="transparent" border="none" onClick={()=>history.push('./login')}/>
+                        <Button width="150px" text="Signup"marginL="20px" color="orange" onClick={()=>history.push('./login')}/>  
                     </div>
                 </div>
                 <div className={Homecss.middlediv}>
-                    <h1>Overcome The  Hustle In Traffic At No Cost </h1>
-                    <p> Because traffic has always sucked We aim To Offer the best cost free traffic information to all stakeholders  At No Cost</p>
-                    <Button width="100px" text="Register" color="#2596be"/>
+                    <h1 className={Homecss.mid}>Overcome The  Hustle In Traffic At No Cost </h1>
+                    {/* <h5> Because traffic has always sucked We aim To Offer the best cost free traffic information to all stakeholders  At No Cost</h5> */}
+                    <Button width="150px" text="Register" color="orange"/>
                 </div>
             </div>
 

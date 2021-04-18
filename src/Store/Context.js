@@ -12,7 +12,7 @@ const AppProvider = (props) => {
     function updateValues(e){
        
         setValues({...values,[e.target.name ]: e.target.value})
-        console.log(e.target.value)
+        console.log(values)
     }
     console.log(values)
     let history  = useHistory()

@@ -9,9 +9,9 @@ function Approutes (){
         <Switch>
             <Route exact path ="/Login" component = {Login}/>
             <Route  exact path ="/Signup" component = {Signup}/>
-            <Route exact path ="/Dashboard" component = {Dashboard}/>
+            <Route exact path ="/" component = {Dashboard}/>
             <Route  exact path ="/Home" component = {Home}/>
-            <Route  exact path ="/" component = {Homepage}/>
+            <Route  exact path ="/Homepage" component = {Homepage}/>
         </Switch>
     )
 }
