@@ -1,10 +1,10 @@
-import ButtonCss from './Button.module.css'
 
-function Button (props,onChange,className,onClick){
+function Button (props){
 
     return(
         <button style={{
             backgroundColor:props.color,
+            fontFamily :"verdana,geneva,sans-serif",
             color:'peach',
             width:props.width,
             height:props.height,
@@ -15,13 +15,14 @@ function Button (props,onChange,className,onClick){
             marginLeft:props.marginL,
             alignSelf:props.alignSelf,
             outline:"none",
-            marginTop:props.marginT
+            marginTop:props.marginT,
+            cursor :"pointer"
+            
 
 }}
-onChange={onChange} className = {className} onClick={onClick} >
+onClick={props.onClick} className = {props.className}  >
             {props.text}
-            {/* boxShadow:'2px 2px 2px', */}
         </button>
     )
 }
-export default Button
+export default Button;

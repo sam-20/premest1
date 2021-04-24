@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -9,17 +10,33 @@
     /* background-color: aqua; */
     background-size: 100% 100%;
 }
+.Link{
+    align-self: center;
+    /* justify-self: s; */
+}
 .imge{
+    max-height: 150px;
+    max-width: 150px;
+    margin-left: 5px;
+}
+.ige{
     max-height: 100px;
-    max-width: 100px;
+    max-width: 150px;
+    margin-left: 10px;
+}
+.imege{
+    max-height: 100px;
+    max-width: 200px;
+    margin-left: 10px;
 }
 .up{
-   background-color: rgb(135, 253, 253);
+   /* background-color: rgb(135, 253, 253); */
+   background-image: url(../../images/backdrown.jpg);
+   /* background-color: #074b66; */
     background-size: 100% 100%;
-    background-image: url(https://s1.cdn.autoevolution.com/images/news/gallery/2021-honda-jazz-type-r-rendered-rumored-with-four-cylinder-turbo-engine_3.jpg);
     
-
-    
+  
+    /* background-image: url(https://di-uploads-pod1.dealerinspire.com/earlstewarttoyota/uploads/2018/02/Toyota-Entune-Technology-copy-1024x427.jpg);   */
 }
 .top{
     display: flex;
@@ -28,20 +45,38 @@
 
     align-items: center;
     justify-content: space-between;
+    
 }
-.list{
+.link{
+    margin-left: 10px;
+    color: blue;
+}
+/* .list{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+} */
 .middlediv{
     height: 60vh;
+    /* display: flex;
+    flex-direction: row; */
+    /* align-items: center;
+    justify-content: center;
+    justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    width: 218.5vh;
+    background-color: hsla(160, 91%, 23%, 0.5);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly
+    /* justify-content: center; */
+    margin-right: 100px;
     
+    
+}
+.stm{
+    text-align: center;
+    font-family :"verdana,geneva,sans-serif";
+
 }
 .foot{
     display: flex;
@@ -49,19 +84,26 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
-    margin-top: 5px;
-}
-.btn{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-h1{
-    color: #2596be;
-}
-.mid{
-    color: rgba(22, 172, 241, 0.849)
+    margin-top: none;
 }
 
+h1{
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 900; */
+    color: wheat;
+    
+}
+.mid{
+    /* color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    text-align: center;
+    /* background-color: hsla(160, 88%, 75%, 0.5);
+    height: 60vh; */
+    /* background-color: blue; */
+    margin-right: 15vh;
+    justify-content: space-around;
+  
+}
 
 ul{
     list-style-type: none;
@@ -72,14 +114,18 @@ li{
     padding-right: 40px;
 }
 h5{
-    color: white
+    color: wheat
 }
 .mge{
     max-width: 100px;
-    max-height: 50px
+    max-height: 50px;
+    border-right: solid 2px #99CA0A;
 }
 .tp{
     display: flex;
     flex-direction: row;
     align-items: center
+}
+.btn{
+    margin-right: 15px;
 }

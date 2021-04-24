@@ -60,7 +60,7 @@
 
 .dash{
     background-color: wheat;
-    height: 98vh;
+    height: 100vh;
     width: 200vh;
     display: flex;
     flex-direction: row;
@@ -97,6 +97,9 @@
 .RB{
     /* background-color: blueviolet; */
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+
 }
 .RT1{
     height: 30vh;
@@ -116,6 +119,29 @@
 .select{
     width: 300px;
     height: 35px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+    padding-left:70px;
+}
+.RBLL{
+    display: flex;
+    justify-content: space-around;
+}
+.RBR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+.RBL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
 }
 
 

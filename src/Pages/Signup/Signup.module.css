@@ -3,36 +3,29 @@
     padding: 0%;
     height: 100vh;
     display: flex;
-    background-image: url(../../images/Traffic-jams.png);
-    background-size: 100% 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 .top{
-    flex-direction: row;
-    flex: 0.4;
+    direction: row;
+    /* flex: 0.4; */
     height: 450px;
     width: 350px;
-    background-color: wheat;
-    /* background-color: rgb(91, 238, 17); */
-    margin-top: 90px;
-    margin-left: 90px;
-    border-radius: 15px;
+    background-color:transparent;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px -5px 10px  
+    /* box-shadow: 5px -5px 10px; */
+    margin-top: 25px;
 }
  .signn{
-     color: rgb(91, 238, 17);
-     margin-left: 20px;
-     margin-top: 30px
+     color: rgba(16, 111, 211, 0.823);
+     margin-top: 20px;
+     align-self: center;
+     justify-self: center;
+    
  }
- .branding{
-     margin-top: 250px;
-     margin-left: 200px;
-     color: rgb(91, 238, 17);
-     font-size: 100px;
-     font-style: oblique;
-
- }
+ 
  
 .inpute{
     margin: 10px;
@@ -40,10 +33,10 @@
     margin-right: 30px;
     border: none;
     outline: none;
-    border-bottom: solid 2px;
-    margin: 20px;
+    border-bottom: solid 1px;
     background-color: transparent;
     width: 300px;
+    font-family :"verdana,geneva,sans-serif"
 }
 
 .linktoLog{
@@ -51,4 +44,40 @@
     margin-top: 25px;
     
 }
-
+.new{
+    display: flex;
+    flex-direction: row-reverse;
+    direction: row;
+    height: 500px;
+    width: 750px;
+    background-color: white;
+    display: flex;    
+    box-shadow: 2px 2px  blue;
+}
+.bottom{
+    /* background-image: url(../../images/nnn.jpg); */
+    background-image: url(../../images/update.png);
+    background-size: 100% 100%;
+    color: white;
+    font-family :"verdana,geneva,sans-serif"
+}
+.bl{
+    height: 500px;
+    background-color: rgba(16, 111, 211, 0.823);
+    display: flex;
+    flex-direction: column;
+    
+    /* background-color: blueviolet; */
+}
+.btn{
+    background-color: rgba(16, 111, 211, 0.823);
+    margin-top: 30px;
+    align-self: center;
+    width: 300px;
+    height: 40px;
+}
+.b2{
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

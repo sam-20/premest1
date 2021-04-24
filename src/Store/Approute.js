@@ -4,14 +4,18 @@ import Dashboard from '../Pages/Dashoard/Dashboard'
 import Login from '../Pages/Login/Login'
 import Home from '../Pages/Homepage/Home'
 import Homepage from '../Pages/Home/Homepage'
+import Aboutus from '../Pages/About Us/Aboutus'
+import Contact from '../Pages/Contact/Contact'
 function Approutes (){
     return(
         <Switch>
             <Route exact path ="/Login" component = {Login}/>
             <Route  exact path ="/Signup" component = {Signup}/>
-            <Route exact path ="/" component = {Dashboard}/>
+            <Route exact path ="/Dashboard" component = {Dashboard}/>
             <Route  exact path ="/Home" component = {Home}/>
-            <Route  exact path ="/Homepage" component = {Homepage}/>
+            <Route  exact path ="/" component = {Homepage}/>
+            <Route  exact path ="/Aboutus" component = {Aboutus}/>
+            <Route exact path ="/Contact" component = {Contact}/>
         </Switch>
     )
 }
