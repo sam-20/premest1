@@ -1,4 +1,5 @@
 import {React,useState} from 'react'
+import Link, { useHistory } from 'react-router-dom'
 import Button from '../../Components/Button'
 import Inputfields from '../../Components/Inputfields'
 import Ccss from './Contact.module.css'
@@ -9,6 +10,7 @@ function Contact() {
     function Popup () {
         noPop(!(pop))
     }
+    let history = useHistory();
     return (
         <div className={Ccss.main}>
             <div className={Ccss.main1} >
@@ -36,7 +38,7 @@ function Contact() {
                                 <h6 style={{fontSize:"30px"}}>Address :</h6>
                                 <p> AD - 282 - 1818 <br/> Kumasi <br/> Ghana </p>
                             </div>
-                            
+                            <Button className={Ccss.bton} text="Go home"  onClick={()=> history.push("/")}/>
                            
                         </div>
                         

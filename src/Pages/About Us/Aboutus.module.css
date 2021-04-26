@@ -48,3 +48,21 @@
     margin-top: 20px;
     margin-right: 120px;
 }
+.foot{
+    display: flex;
+    margin-top: 50px;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-top: 2px;
+}
+.link{
+    color: white;
+    margin-top: 15px;
+    font-size: small;
+    margin-left: 30px;
+}

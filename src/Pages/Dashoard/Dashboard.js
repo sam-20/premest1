@@ -38,15 +38,15 @@ function Dashboard () {
                         <div className = {DashCss.left1}>
                             <div className={DashCss.rush}>
                                 <img src={Rushour} className={DashCss.imge} alt="emoji"/> 
-                                <h3>Rushour</h3>
+                                <p>Rushour</p>
                             </div>
                             <div className={DashCss.rush}>
                                 <img src={Dash} className={DashCss.imge} alt="emoji"/> 
-                                <h3>Dashboard</h3>
+                                <p>Dashboard</p>
                             </div>
                             <div className={DashCss.rush}>
                                 <img src={Profile} className={DashCss.imge} alt="emoji"/> 
-                                <h3>Profile</h3>
+                                <p>Profile</p>
                             </div>
                             <div className={DashCss.rush}>
                                 <img src={settings} className={DashCss.imge} alt="emoji"/> 
@@ -109,7 +109,7 @@ function Dashboard () {
                             </div>
                             <div className={DashCss.RBR}>
                             <h4>Requested Traffic</h4>
-                            <Select className={DashCss.Sselect} />
+                                <Select className={DashCss.Sselect} />
                                 <Select className={DashCss.Rselect} />
                                 <Select className={DashCss.Rselect} />
                                 <Select className={DashCss.Rselect} />

@@ -89,3 +89,11 @@
 .pop{
     display: none;
 }
+.bton{
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}

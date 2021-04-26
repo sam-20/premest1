@@ -26,7 +26,7 @@ function Homepage() {
                                 <a classname={Homecss.link}>CONTACT US</a> */}
                                 <Button  width="150px" height="35px" text="About Us" color="transparent" border="none" onClick={()=>history.push("./Aboutus")}/>
                                 <Button  width="150px" height="35px" text="Contact"  color="transparent" border="none" onClick={()=>history.push("./Contact")}/>
-                                <Button  width="150px" height="35px" text="How It works" marginL="10px" color="transparent" border="none"/>
+                                <Button  width="150px" height="35px" text="How It works" marginL="10px" color="transparent" border="none" onClick={()=>history.push("./How")}/>
                             </ul>
                         </div>
                     <div className={Homecss.btn}>
