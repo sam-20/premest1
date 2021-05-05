@@ -1,15 +1,43 @@
 import {React,useState} from 'react'
-import Link, { useHistory } from 'react-router-dom'
+import  { useHistory } from 'react-router-dom'
+import {useAppContext} from '../../Store/Context'
 import Button from '../../Components/Button'
 import Inputfields from '../../Components/Inputfields'
 import Ccss from './Contact.module.css'
 import update from '../../images/update.png'
 
 function Contact() {
+    const {updateValues,values,goToPage} = useAppContext();
     const [pop, noPop] = useState (true)
     function Popup () {
         noPop(!(pop))
     }
+    function submit(e) {
+        e.preventDefault();
+        
+        fetch('http://localhost:5000/api/v1/contact',
+          {
+            method: 'POST',
+            body: JSON.stringify(values),
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          })
+          .then(res => res.json())
+          .then(resData => {
+            console.log(resData);
+            // if (!(updateValues)){alert('input fields empty')}
+            if (resData.message === "Thank you for contacting us we'll get back to u soon") {
+              goToPage("/homepage")
+            }
+            else {
+              alert("else sorry, we couldnt get your message. Check your connection and try again")
+            }
+              
+            
+          }, err => console.log(err))
+    
+      }
     let history = useHistory();
     return (
         <div className={Ccss.main}>
@@ -24,10 +52,10 @@ function Contact() {
                     </div>
                     <div className={Ccss.rbottom} >
                         <div className={Ccss.rb1}>
-                            <Inputfields placeholder="Full Name" className={Ccss.input}/>
-                            <Inputfields placeholder="Email" className={Ccss.input}/>
-                            <Inputfields placeholder="Message" className={Ccss.input}/>
-                            <Button className={Ccss.btn} text="Contact Us"/>
+                            <Inputfields placeholder="Full Name" className={Ccss.input} onChange={updateValues}/>
+                            <Inputfields placeholder="Email" className={Ccss.input} onChange={updateValues}/>
+                            <Inputfields placeholder="Message" className={Ccss.input} onChange={updateValues}/>
+                            <Button className={Ccss.btn} text="Contact Us" onClick={submit}/>
                         </div>
                         <div className={Ccss.rb2}>
                             <div className={Ccss.rb2t}>

@@ -7,7 +7,38 @@ import logincss from './Login.module.css'
 import drive from '../../images/xxx.png'
 
 export default function Login (){
-    const {updateValues} = useAppContext();
+    
+    const {updateValues,values,goToPage} = useAppContext();
+    function submit(e) {
+        e.preventDefault();
+        try {
+          
+          fetch('http://localhost:5000/api/v1/login',
+            {
+              method: 'POST',
+              body: JSON.stringify(values),
+              headers: {
+                'Content-Type': 'application/json'
+              },
+            })
+            .then(res => res.json())
+            .then(resData => {
+              console.log(resData);
+              if (resData.message === "succesful") {
+                goToPage("/maindash")
+              }
+              else {
+                alert("signup failed")
+              }
+              
+            },
+            err => console.log(err))
+        } catch (error) {
+          
+        }
+    
+    
+      }
     
     return(
         <div className = {logincss.mainLoge}>
@@ -30,7 +61,7 @@ export default function Login (){
                <div className = {logincss.input}>
                    <Inputfield label="Email :" name ="email" className={logincss.inpute}placeholder=" example@gmail.com" type="text" onChange={updateValues}/>
                    <Inputfield label="Password :"  name ="password" className={logincss.inpute} placeholder=" *******" type="text" onChange={updateValues}/>
-                   <Button text="Log in" width="250px" height="40px" alignSelf="center" color="white"  BS="2px 2px 2px" borderr="20px" marginT="5px" />
+                   <Button text="Log in" width="250px" height="40px" alignSelf="center" color="white"  BS="2px 2px 2px" borderr="20px" marginT="5px" onClick={submit}/>
                    <Link to = '/' className={logincss.link}>Forgot your username or password?</Link>
                </div>
             </div>

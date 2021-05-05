@@ -8,6 +8,11 @@ const AppProvider = (props) => {
     let history = useHistory()
 
     // console.log(history);
+    // const [usedetails, seUserdetails] = ({})
+    // function getUserdetails(){
+
+    // }
+
 
     function goToPage(path){
         history.push(path)

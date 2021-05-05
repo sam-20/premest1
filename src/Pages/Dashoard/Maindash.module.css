@@ -1,0 +1,69 @@
+.main{
+    /* background-color: brown; */
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main1{
+    height: 98vh;
+    width: 200vh;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -2px 2px 2px black;
+    /* align-items: center;
+    justify-content: center; */
+}
+.links{
+    flex: 0.07;
+    /* background-color: blue; */
+    margin-bottom: 15vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.lnk{
+    color: blue;
+   border: none;
+   outline: none;
+}
+.routes{
+    flex: 0.93;
+    /* background-color: aqua; */
+    background-color: rgb(235, 235, 235);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.imge{
+    max-width: 25px;
+    max-height: 30px;
+    margin-left: 17px;
+}
+.imge1{
+    max-width: 40px;
+    max-height: 30px;
+    margin-left: 7px;
+    border-radius: 90px;
+}
+.imgel{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 100px;
+    /* margin-left: 7px; */
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    border: none;
+    outline: none;
+    border-bottom: solid 1px;
+    color: blue;
+}

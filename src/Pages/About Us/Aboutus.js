@@ -3,7 +3,6 @@ import {Link , useHistory} from 'react-router-dom'
 import Button from '../../Components/Button'
 import Acss from './Aboutus.module.css'
 import top from '../../images/fam.jpg'
-import down from '../../images/bolt.jpg'
 import p from '../../images/contact.jpg'
 function Aboutus() {
     let history = useHistory ();
@@ -41,7 +40,7 @@ function Aboutus() {
                          <h2 style={{color:"white", marginTop:"40px"}}>Mission </h2>
                          <p style={{color:"white",fontFamily:"Poppins",fontSize:"small"}}>Providing Tailored cost free traffic and direction information to all stakehoholders</p>
                         <h2 style={{color:"white", marginTop:"50px"}}>Vision </h2>
-                         <p style={{color:"white",fontFamily:"Poppins",fontSize:"small"}}>Our vision is to create a better everyday life for many people</p>
+                         <p style={{color:"white",fontFamily:"Poppins",fontSize:"small"}}>Our vision is to create a better everyday traffic life for all Ghanains</p>
                          <div className={Acss.foot}>
                                 <Button className={Acss.btn} text="Signup" color="white" onClick={()=> history.push("/Signup")}/>
                                 <Link  className={Acss.link} to="/">  Back to Home</Link>
