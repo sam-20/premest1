@@ -73,7 +73,15 @@
 .ptg1{
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 40px;
+    margin-top: 20px;
+    
+}
+.ptg2{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 150%;
 }
 .imge{
     max-width: 30vh;
@@ -125,6 +133,7 @@
     text-align: center;
     background-color:#45e2e4;
     padding-left:70px;
+    /* margin-top: 10px; */
 }
 .RB{
     display: flex;

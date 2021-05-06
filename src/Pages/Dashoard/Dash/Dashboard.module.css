@@ -7,7 +7,6 @@
     padding: 0%;
     display: flex;
     flex-direction: row;
-    /* background-color:aqua; */
 }
 .left{
     display: flex;
@@ -18,7 +17,6 @@
 }
 .lt{
     flex: 0.2;
-    /* background-color: blue; */
     background-color: #1d1e3a;
     display: flex;
     flex-direction: column;
@@ -50,8 +48,7 @@
     flex: 0.7;
     display: flex;
     flex-direction: column;
-    
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .inpute{
     width: 300px;
@@ -60,10 +57,7 @@
     border: none;
     outline: none;
 }
-/* .imge{
-    max-width: 5vh;
-    height: 5vh;
-} */
+
 .head{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
@@ -72,8 +66,8 @@
 }
 
 .imge{
-    max-width: 30vh;
-    max-height: 30vh;
+    max-width: 25vh;
+    max-height: 25vh;
     margin-right: 25px;
 }
 .ptag{
@@ -92,22 +86,19 @@
    
 }
 .RT{
-    /* background-color: brown; */
-    /* height: 40vh; */
-    flex: 0.4;
-    /* background-color: blanchedalmond; */
+    margin-top: 10px;
+    flex: 0.3;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .RB{
-    flex: 0.6;
-    /* background-color: blueviolet; */
+    flex: 0.7;
     background-image: url(../../../images/ccc.jpg);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-
+    margin-top: 15px;
 }
 .RB1{
     background-color: #1d1e3abf;
@@ -123,17 +114,17 @@
     justify-content: space-around;
 }
 .RT1{
-    height: 30vh;
+    height: 25vh;
     background-color: white;
     width: 45vh;
-    box-shadow: 2px -2px 5px 2px;
+    box-shadow: -2px -2px 20px #1d1e3abf;
     border-radius: 5px;
 }
 .RT2{
-    height: 30vh;
+    height: 25vh;
     background-color: #1d1e3abf;
     width: 65vh;
-    box-shadow: 2px -2px 5px 2px;
+    box-shadow: -2px 2px 20px #1d1e3abf;
     border-radius: 2px;
     display: flex;
     flex-direction: row-reverse;

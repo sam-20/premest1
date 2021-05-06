@@ -40,20 +40,19 @@ function Requested() {
                 </div>
                 <div className={Dcss.ritb}>
                     <div className={Dcss.ritb1}>
-                        <h4 >Traffic Updates</h4>
-                        <Inputfield label="suggested Requests: " name ="Sug Area" className={Dcss.inpute} placeholder="e.g off Asafo - Tech Road" type="text" onChange={updateValues}/>
+                        <h4 className={Dcss.ptg2} >Current Requests</h4>
+                        <Select  className={Dcss.select} onChange={updateValues} />
                     </div>
                     <div className={Dcss.ritb2} >
 
                         <div>
-                            <Inputfield label="Area/Road: " name ="Sug Area" className={Dcss.inpute} placeholder="e.g off Asafo - Tech Road" type="text" onChange={updateValues}/>
-                            <Select text2="Traffic" text1="Road Block" name="select" text3="Accident" text4="Police Inspection" className={Dcss.select} onChange={updateValues} />
-                            <Inputfield label="Description :" name ="Sug Desc" className={Dcss.inpute} placeholder="where are u talking about?" onChange={updateValues}/>
+                            <Inputfield label="Current Location: " name ="Sug Area" className={Dcss.inpute} placeholder="Ejisu" type="text" onChange={updateValues}/>
+                            
+                            <Inputfield label="Destination :" name ="Sug Desc" className={Dcss.inpute} placeholder="Adum" onChange={updateValues}/>
                         </div>
                         <div>
-                            <Inputfield label="Suggest Route :" name ="Sug Route" className={Dcss.inpute} placeholder="e.g use ... route " type="text" onChange={updateValues}/>
-                            <Inputfield label="distance per minute :" name ="Distance trav" className={Dcss.inpute} placeholder="1m/hr " type="text" onChange={updateValues}/>
-                            <Inputfield label=" Time :" className={Dcss.inpute} name="time" placeholder="e.g 10:00pm " type="time" onChange={updateValues} />
+                            <Inputfield label="Time  :" name ="Sug Route" className={Dcss.inpute} placeholder="e.g use ... route " type="time" onChange={updateValues}/>
+                            <Inputfield label="Date :" name ="Distance trav" className={Dcss.inpute} placeholder="1m/hr " type="date" onChange={updateValues}/>
                         </div>
                     </div>
                 </div>

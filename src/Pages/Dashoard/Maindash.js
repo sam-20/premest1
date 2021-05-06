@@ -28,7 +28,7 @@ function Request() {
                                 <Link to = "/requested" > <p className={Dcss.lnk}>Request</p> </Link>
                             </div>
                             <div className={Dcss.rush}>
-                                
+
                                     
                                 <img src={Sug} className={Dcss.imgel} alt="emoji"/> 
                                 

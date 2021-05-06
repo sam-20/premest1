@@ -2,6 +2,8 @@ import {Switch,Route, Link , BrowserRouter} from 'react-router-dom'
 import User from '../../../images/suggest.jpg'
 import DashCss from './Dashboard.module.css'
 import Sinputs from '../Components/Sinputs'
+import CurrentR from '../Components/currentR'
+import CurrentS from '../Components/CurrentS'
 import Rinputs from '../Components/Rinputs'
 function Dashboard () {
    
@@ -43,13 +45,13 @@ function Dashboard () {
                     <div className={DashCss.RB}>
                         <div className={DashCss.RB1}>
 
-                        <p className={DashCss.lt2}>Today's Updates </p>
+                        <p className={DashCss.lt2}>Current Updates </p>
                         <div className={DashCss.RB2}>
                             <div>
-                            <Rinputs/>  
+                            <CurrentR/>  
                             </div>
                             <div>
-                                <Rinputs/>
+                            <CurrentS/>
                             </div>
                         </div>
                         </div>

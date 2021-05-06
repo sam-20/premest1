@@ -21,9 +21,7 @@ function Homepage() {
                         </div>
                         <div className ={Homecss.list}>
                             <ul style={{marginLeft:"5vh"}}>
-                                {/* <a classname={Homecss.link}>HOW IT WORKS</a>
-                                <a classname={Homecss.link}>ABOUT US</a>
-                                <a classname={Homecss.link}>CONTACT US</a> */}
+
                                 <Button className={Homecss.btn} width="150px" height="35px" text="About Us" color="transparent" border="none" onClick={()=>history.push("./Aboutus")}/>
                                 <Button className={Homecss.btn} width="150px" height="35px" text="Contact"  color="transparent" border="none" onClick={()=>history.push("./Contact")}/>
                                 <Button className={Homecss.btn} width="150px" height="35px" text="How It works" marginL="10px" color="transparent" border="none" onClick={()=>history.push("./How")}/>
@@ -32,7 +30,7 @@ function Homepage() {
                     <div className={Homecss.btn}>
                         
                         <Button width="150px" className={Homecss.btn} height="35px" text="Login"  color="transparent" border="none" onClick={()=>history.push("./login")}/>
-                        <Button width="150px" className={Homecss.btn1} height="35px" text="Sign up"  marginR="" border="none" color="#1d1e3a" onClick={()=>history.push("./Signup")}/>  
+                        <Button width="150px" className={Homecss.btn1} height="35px" text="Sign up"  marginR="" border="none" color="#1d1e3a" onClick={()=>history.push("./Signup")}/> 
                     </div>
                 </div>
                 <div className={Homecss.middlediv}>

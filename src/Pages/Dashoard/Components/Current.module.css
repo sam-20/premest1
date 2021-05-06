@@ -8,15 +8,17 @@
 }
 .head1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
+    color: wheat;
 }
 .inpute{
     width: 300px;
     height: 25px;
     margin-bottom: 15px;
 }
+
 .btn{
     background-color:  #1d1e3a;
     color: white;

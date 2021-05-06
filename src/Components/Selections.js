@@ -2,7 +2,7 @@ function Selectoption(props){
     return(
         <div>
             <select className={props.className} name={props.name} onChange={props.onChange}>
-                <option >--Type--</option>
+                <option >{props.namee}</option>
                 <option value={props.value1}>{props.text1}</option>
                 <option value={props.value2}>{props.text2}</option>
                 <option value={props.value3}>{props.text3}</option>
