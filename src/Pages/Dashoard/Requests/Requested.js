@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useAppContext } from '../../../Store/Context'
 import Button from '../../../Components/Button'
 import Dcss from './Req.module.css'
@@ -7,10 +7,22 @@ import Inputfield from '../../../Components/Inputfields'
 import User from '../../../images/suggest.jpg'
 function Requested() {
     const { updateValues, values } = useAppContext();
+
+    /**this array will store the various requests objects put in by the user
+     * eg. 
+    [
+        {location: "ayeduase", destination: "oduom", time: "06:59", date: "7686-07-06"},
+        {location: "amakom", destination: "asafo", time: "06:59", date: "7686-07-06"},
+        {location: "ejisu", destination: "tech", time: "06:59", date: "7686-07-06"},
+    ]
+     */
+    const [requestsArr, setRequestsArr] = useState([])
+
     function Getvalues() {
         console.log(values);
 
-
+        setRequestsArr([...requestsArr, values])
+        console.log(`requests array: ${JSON.stringify(requestsArr)}`);
 
         // var temparray = traffic
         // console.log(`temparray: ${temparray}`);
