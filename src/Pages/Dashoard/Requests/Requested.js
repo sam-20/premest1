@@ -16,13 +16,38 @@ function Requested() {
         {location: "ejisu", destination: "tech", time: "06:59", date: "7686-07-06"},
     ]
      */
-    const [requestsArr, setRequestsArr] = useState([])
+    const [requestsArr, setRequestsArr] = useState([{ location: "Not selected", destination: "Not selected", time: "00:00", date: "2000-01-01" }])
+
+
+    /**when a user selects a particular request object from the requestsArr , we fetch only that object 
+     * into this state variable
+    */
+    const [selectedReq, setSelectedReq] = useState({ location: null, destination: null, time: null, date: null })
 
     function Getvalues() {
 
         /**keep the previous state (previous values in the array and add the incoming values to it) */
         setRequestsArr([...requestsArr, values])
-        console.log(`requests array: ${JSON.stringify(requestsArr)}`);
+        // console.log(`requests array: ${JSON.stringify(requestsArr)}`);
+    }
+
+    /**when a user selects an item in the select drop down we
+     * update the input fields below the select menu
+     */
+    function updateInputs(e) {
+        // console.log(e);
+        // console.log(e.target.value);
+
+        /**we filter out the object from the requestsArr based on the 
+         * comparing location property from the requestsArr (array.location)
+         * WITH 
+         * location value we set to the option's value prop (e.target.value)
+         */
+        let newobj = requestsArr.find(array => array.location == e.target.value)
+        setSelectedReq(newobj)
+        // console.log(newobj);
+        console.log(selectedReq);
+
     }
 
 
@@ -61,13 +86,14 @@ function Requested() {
                         <select
                             name={requestsArr}
                             id="requestsarray"
-                            onChange={(e) => { console.log(e.target.value); }}
+                            onChange={updateInputs}
                             className={Dcss.newSelect}
                         >
+                            {/* <option value="Not selected">location: "Not selected", destination: "Not selected", time: "00:00", date: "Not selected"</option> */}
                             {
                                 requestsArr.map((count, index) => {
                                     return (
-                                        <option key={index} value={count}>
+                                        <option key={index} value={count.location}>
                                             {`Location:${count.location}    Destination:${count.destination}    Time:${count.time}  Date:${count.date}`}
                                         </option>
                                     )
@@ -79,20 +105,31 @@ function Requested() {
                     <div className={Dcss.ritb2} >
 
                         <div>
-                            <Inputfield label="Current Location: " name="Sug Area" className={Dcss.inpute} placeholder="Ejisu" type="text" onChange={updateValues} />
+                            <Inputfield
+                                value={selectedReq.location}
+                                label="Current Location: " name="Sug Area" className={Dcss.inpute} 
+                                placeholder={selectedReq.location} type="text"  />
 
-                            <Inputfield label="Destination :" name="Sug Desc" className={Dcss.inpute} placeholder="Adum" onChange={updateValues} />
+                            <Inputfield
+                                value={selectedReq.destination}
+                                label="Destination :" name="Sug Desc" className={Dcss.inpute} 
+                                placeholder={selectedReq.destination}  />
                         </div>
                         <div>
-                            <Inputfield label="Time  :" name="Sug Route" className={Dcss.inpute} placeholder="e.g use ... route " type="time" onChange={updateValues} />
-                            <Inputfield label="Date :" name="Distance trav" className={Dcss.inpute} placeholder="1m/hr " type="date" onChange={updateValues} />
+                            <Inputfield
+                                value={selectedReq.time}
+                                label="Time  :" name="Sug Route" className={Dcss.inpute} placeholder="e.g use ... route " type="time" />
+
+                            <Inputfield
+                                value={selectedReq.date}
+                                label="Date :" name="Distance trav" className={Dcss.inpute} placeholder="1m/hr " type="date" />
                         </div>
                     </div>
                 </div>
 
             </div>
 
-        </div>
+        </div >
 
 
 
