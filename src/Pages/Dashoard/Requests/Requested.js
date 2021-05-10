@@ -9,6 +9,7 @@ function Requested() {
     const { updateValues, values } = useAppContext();
 
     /**this array will store the various requests objects put in by the user
+     * we provide initial state to show in the drop down menu if the user hasnt put any requests
      * eg. 
     [
         {location: "ayeduase", destination: "oduom", time: "06:59", date: "7686-07-06"},
