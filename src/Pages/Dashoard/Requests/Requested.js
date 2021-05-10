@@ -19,13 +19,12 @@ function Requested() {
     const [requestsArr, setRequestsArr] = useState([])
 
     function Getvalues() {
-        console.log(values);
+        // console.log(values);
 
         setRequestsArr([...requestsArr, values])
         console.log(`requests array: ${JSON.stringify(requestsArr)}`);
 
-        // var temparray = traffic
-        // console.log(`temparray: ${temparray}`);
+  
     }
     return (
 
