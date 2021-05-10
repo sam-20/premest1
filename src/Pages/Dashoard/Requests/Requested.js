@@ -20,34 +20,29 @@ function Requested() {
 
 
     /**when a user selects a particular request object from the requestsArr , we fetch only that object 
-     * into this state variable
+     * into this state variable.
+     * initially since there's no selected request we set the default paramaters
     */
-    const [selectedReq, setSelectedReq] = useState({ location: null, destination: null, time: null, date: null })
+    const [selectedReq, setSelectedReq] = useState({ location: "Not selected", destination: "Not selected", time: "00:00", date: "2000-01-01" })
 
     function Getvalues() {
 
         /**keep the previous state (previous values in the array and add the incoming values to it) */
         setRequestsArr([...requestsArr, values])
-        // console.log(`requests array: ${JSON.stringify(requestsArr)}`);
     }
 
     /**when a user selects an item in the select drop down we
      * update the input fields below the select menu
      */
     function updateInputs(e) {
-        // console.log(e);
-        // console.log(e.target.value);
 
         /**we filter out the object from the requestsArr based on the 
          * comparing location property from the requestsArr (array.location)
          * WITH 
          * location value we set to the option's value prop (e.target.value)
          */
-        let newobj = requestsArr.find(array => array.location == e.target.value)
+        let newobj = requestsArr.find(array => array.location === e.target.value)
         setSelectedReq(newobj)
-        // console.log(newobj);
-        console.log(selectedReq);
-
     }
 
 
@@ -89,7 +84,6 @@ function Requested() {
                             onChange={updateInputs}
                             className={Dcss.newSelect}
                         >
-                            {/* <option value="Not selected">location: "Not selected", destination: "Not selected", time: "00:00", date: "Not selected"</option> */}
                             {
                                 requestsArr.map((count, index) => {
                                     return (
@@ -106,22 +100,22 @@ function Requested() {
 
                         <div>
                             <Inputfield
-                                value={selectedReq.location}
-                                label="Current Location: " name="Sug Area" className={Dcss.inpute} 
-                                placeholder={selectedReq.location} type="text"  />
+                                value={selectedReq.location} readOnly={true}
+                                label="Current Location: " name="Sug Area" className={Dcss.inpute}
+                                placeholder={selectedReq.location} type="text" />
 
                             <Inputfield
-                                value={selectedReq.destination}
-                                label="Destination :" name="Sug Desc" className={Dcss.inpute} 
-                                placeholder={selectedReq.destination}  />
+                                value={selectedReq.destination} readOnly={true}
+                                label="Destination :" name="Sug Desc" className={Dcss.inpute}
+                                placeholder={selectedReq.destination} />
                         </div>
                         <div>
                             <Inputfield
-                                value={selectedReq.time}
+                                value={selectedReq.time} readOnly={true}
                                 label="Time  :" name="Sug Route" className={Dcss.inpute} placeholder="e.g use ... route " type="time" />
 
                             <Inputfield
-                                value={selectedReq.date}
+                                value={selectedReq.date} readOnly={true}
                                 label="Date :" name="Distance trav" className={Dcss.inpute} placeholder="1m/hr " type="date" />
                         </div>
                     </div>
