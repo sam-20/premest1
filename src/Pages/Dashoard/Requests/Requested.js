@@ -18,8 +18,6 @@ function Requested() {
      */
     const [requestsArr, setRequestsArr] = useState([])
 
-    let myarray = ["a", "b", "c"]
-
     function Getvalues() {
 
         /**keep the previous state (previous values in the array and add the incoming values to it) */
@@ -58,19 +56,14 @@ function Requested() {
                         <h4 className={Dcss.ptg2} >Current Requests</h4>
                         <Select className={Dcss.select} onChange={updateValues} />
 
-                        <select name={myarray} id="myarray">
-                            {
-                                myarray.map((count, index) => {
-                                    return (
-                                        <option key={index} value={count}>
-                                            {`location: ${count}  aab:fds`}
-                                        </option>
-                                    )
-                                })
-                            }
-                        </select>
 
-                        <select name={requestsArr} id="requestsarray">
+                        {/**the objects in the requestedarray are mapped into the select option */}
+                        <select
+                            name={requestsArr}
+                            id="requestsarray"
+                            onChange={(e) => { console.log(e.target.value); }}
+                            className={Dcss.newSelect}
+                        >
                             {
                                 requestsArr.map((count, index) => {
                                     return (
