@@ -18,14 +18,16 @@ function Requested() {
      */
     const [requestsArr, setRequestsArr] = useState([])
 
-    function Getvalues() {
-        // console.log(values);
+    let myarray = ["a", "b", "c"]
 
+    function Getvalues() {
+
+        /**keep the previous state (previous values in the array and add the incoming values to it) */
         setRequestsArr([...requestsArr, values])
         console.log(`requests array: ${JSON.stringify(requestsArr)}`);
-
-  
     }
+
+
     return (
 
         <div className={Dcss.main}>
@@ -55,6 +57,31 @@ function Requested() {
                     <div className={Dcss.ritb1}>
                         <h4 className={Dcss.ptg2} >Current Requests</h4>
                         <Select className={Dcss.select} onChange={updateValues} />
+
+                        <select name={myarray} id="myarray">
+                            {
+                                myarray.map((count, index) => {
+                                    return (
+                                        <option key={index} value={count}>
+                                            {`location: ${count}  aab:fds`}
+                                        </option>
+                                    )
+                                })
+                            }
+                        </select>
+
+                        <select name={requestsArr} id="requestsarray">
+                            {
+                                requestsArr.map((count, index) => {
+                                    return (
+                                        <option key={index} value={count}>
+                                            {`Location:${count.location}    Destination:${count.destination}    Time:${count.time}  Date:${count.date}`}
+                                        </option>
+                                    )
+                                })
+                            }
+                        </select>
+
                     </div>
                     <div className={Dcss.ritb2} >
 
