@@ -1,0 +1,25 @@
+.main {
+    background-image: image();
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+}
+
+.ds1{
+   background-color: blue;
+   display: flex;
+   flex-direction: column;
+}
+
+.ds2{
+   background-color: cadetblue;
+   display: flex;
+   flex-direction: row;
+}
+ 
+.ds3{
+   background-color: chartreuse;
+   display: flex;
+   flex-direction: column;
+}
+
