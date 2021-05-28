@@ -1,5 +1,5 @@
 import React from 'react'
-import Dashbord from './Dashboard'
+import Dashboard from '../Dashboard/Dashboard'
 
 function Signup() {
     return (

@@ -7,18 +7,18 @@ import { useState } from 'react'
 function Signin() {
 
     let history = useHistory();
-    
+
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-     function signin() {
-         if ((username == 'Babel, Nana, Akua, Sammy') && (password == '1234, abdc, tcltv')) {
-             history.push('./dashboard')
-         }
-         else {
-             alert('Wrong username or password')
-         }
-
+    function signin() {
+        if ((username == 'Babel, Nana, Akua, Sammy') && (password == '1234, abdc, tcltv')) {
+            history.push('./dashboard')
+        }
+        else {
+            alert('Wrong username or password')
+        }
+    }
 
     return (
         <div className='in'>
@@ -30,12 +30,12 @@ function Signin() {
                 </div>
 
                 <div className='welcome1'>
-                    <input className='user' type='text' name='Username' placeholder='Username'/>
+                    <input className='user' type='text' name='Username' placeholder='Username' />
                     <br></br>
                     <br></br>
-                    <input className='password' type='numbers' name='Password' placeholder='Password'/>
+                    <input className='password' type='numbers' name='Password' placeholder='Password' />
 
-                    <button className='b1' onClick= {signin} >Login</button>
+                    <button className='b1' onClick={signin} >Login</button>
                 </div>
 
                 <div classname='l1'>
@@ -44,20 +44,20 @@ function Signin() {
                 </div>
 
                 <div classname='l2'>
-                   <p className='link2'> Don't have an account yet? <a className='link2' href='createnewacc'>Create one</a> </p>
+                    <p className='link2'> Don't have an account yet? <a className='link2' href='createnewacc'>Create one</a> </p>
 
                 </div>
 
             </form>
-            
+
             <div>
                 <img className='signin_pic' src="Waakyelogo" alt="It's Ghana's favorite breakfast. Waakye!"></img>
             </div>
 
         </div>
     )
-    }
+}
 
 
 
-    export default Signin
+export default Signin
